@@ -1,10 +1,11 @@
-/* You can add global styles to this file, and also import other style files */
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
+@import url('https://fonts.googleapis.com/css?family=Roboto');
 
 html, body, main {
     margin: 0;
     font-size: 1rem;
     height: 100%;
+    font-family: 'Roboto', sans-serif;
 }
 
 @include media-breakpoint-up(xs) {

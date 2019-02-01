@@ -1,9 +1,9 @@
 <div class="container">
     <div class="row justify-content-center margin">
-        <app-name class="card col-10"></app-name>
+        <app-name class="col-10"></app-name>
     </div>
     <div class="row justify-content-center">
-        <div class="card col-8">
+        <div class="col-8">
             <div class="row text-center">
                 <ng-container *ngFor="let profile of profiles">
                     <app-icon class="col mx-auto" icon="{{profile.icon}}"></app-icon>
@@ -11,7 +11,7 @@
             </div>
         </div>
     </div>
-    <div class="row justify-content-center margin">
-        <div class="card col-8" [innerHtml]="bio | async"></div>
+    <div class="justify-content-center margin">
+        <div class="mx-auto card bg-dark col-10" [innerHtml]="bio | async"></div>
     </div>
 </div>
