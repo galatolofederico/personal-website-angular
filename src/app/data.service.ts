@@ -1,16 +1,16 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Subject } from 'rxjs';
+import { Subject, BehaviorSubject } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
 })
 export class DataService {
-  name : Subject<string> = new Subject<string>();
-  picture: Subject<string> = new Subject<string>();
-  bio: Subject<string> = new Subject<string>();
+  name : BehaviorSubject<string> = new BehaviorSubject<string>("");
+  picture: BehaviorSubject<string> = new BehaviorSubject<string>("");
+  bio: BehaviorSubject<string> = new BehaviorSubject<string>("");
 
-  qualifications : Subject<Array<string>> = new Subject<Array<string>>();
+  qualifications : BehaviorSubject<Array<string>> = new BehaviorSubject<Array<string>>([""]);
 
   profiles : Array<Profile> = new Array<Profile>();
   publications: Array<any> = new Array<any>();
