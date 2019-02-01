@@ -13,7 +13,7 @@
         "nationality": "Italian",
         "picture": "https://via.placeholder.com/250",
         "bio": "Very long description, Very long description, Very long description, Very long description, Very long description, Very long description, Very long description, Very long description, Very long description, Very long description, Very long description, Very long description, Very long description, Very long description, Very long description, Very long description, ",
-        "qualifications": ["PhD Student", "Machine Learning Engineer", "Computer Engineer"]
+        "qualifications": ["PhD Student", "Machine Learning Engineer", "Computer Engineer", "Open Source Enthusiast"]
     },
     "digitalidentity":{
         "telephone": "galatol",
@@ -21,17 +21,22 @@
         "email": "galatolo",
         "profiles":[
             {
-                "platform": "github",
+                "platform": "GitHub",
                 "link": "https://github.com/galatolofederico",
                 "icon": "github"
             },
             {
-                "platform": "linkedin",
+                "platform": "LinkedIn",
                 "link": "https://www.linkedin.com/in/galatolo/",
                 "icon": "linkedin"
             },
             {
-                "platform": "telegram",
+                "platform": "Instagram",
+                "link": "https://www.instagram.com/notsosocial/",
+                "icon": "instagram"   
+            },
+            {
+                "platform": "Telegram",
                 "link": "https://telegram.me/galatolo",
                 "icon": "telegram"
             }

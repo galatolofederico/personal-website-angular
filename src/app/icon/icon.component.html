@@ -1,1 +1,3 @@
-<fa-icon [icon]="['fab', icon]"></fa-icon>
+<a href="{{profile.link}}" class="text-light">
+  <fa-icon [icon]="['fab', profile.icon]" ngbPopover="Go to my {{profile.platform}} profile!"></fa-icon>
+</a>
