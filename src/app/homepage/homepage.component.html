@@ -1,14 +1,17 @@
 <div class="container">
-    <div class="row justify-content-center">
-        <app-name class="card col-10 "></app-name>
+    <div class="row justify-content-center margin">
+        <app-name class="card col-10"></app-name>
     </div>
     <div class="row justify-content-center">
-        <div class="card col-6">
+        <div class="card col-8">
             <div class="row text-center">
-                <ng-container *ngFor="let platform of platforms">
-                    <app-icon class="col mx-auto" icon="{{platform.icon}}"></app-icon>
+                <ng-container *ngFor="let profile of profiles">
+                    <app-icon class="col mx-auto" icon="{{profile.icon}}"></app-icon>
                 </ng-container>
             </div>
         </div>
+    </div>
+    <div class="row justify-content-center margin">
+        <div class="card col-8" [innerHtml]="bio | async"></div>
     </div>
 </div>

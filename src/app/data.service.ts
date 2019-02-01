@@ -8,23 +8,31 @@ import { Subject } from 'rxjs';
 export class DataService {
   name : Subject<string> = new Subject<string>();
   picture: Subject<string> = new Subject<string>();
+  bio: Subject<string> = new Subject<string>();
+
+  qualifications : Subject<Array<string>> = new Subject<Array<string>>();
 
   profiles : Array<Profile> = new Array<Profile>();
-  qualifications : Subject<Array<string>> = new Subject<Array<string>>();
+  publications: Array<any> = new Array<any>();
 
   constructor(private http: HttpClient) {
     var _qualifications = [];
     this.http.get("assets/me.json").subscribe((data: MeJson) => {
       this.name.next(this._parseName(data.anagraphic.fullname))
       this.picture.next(data.anagraphic.picture)
+      this.bio.next(data.anagraphic.bio)
+
       data.digitalidentity.profiles.forEach(profile => {
         this.profiles.push(profile)
       })
+      data.publications.forEach(publication => {
+        this.publications.push(publication)
+      })
+
       for (var qualification of data.anagraphic.qualifications){
         _qualifications.push(qualification)
       }
       this.qualifications.next(_qualifications)
-      console.log(_qualifications)
     })
   }
 
@@ -38,9 +46,13 @@ export class DataService {
   getPicture(){
     return this.picture
   }
-  
+
   getName(){
     return this.name
+  }
+
+  getBio(){
+    return this.bio
   }
 
   getQualifications(){
