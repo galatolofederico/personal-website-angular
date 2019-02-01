@@ -1,5 +1,5 @@
 <div class="container">
-    <div class="row justify-content-center margin">
+    <div class="row justify-content-center">
         <app-name class="col-10"></app-name>
     </div>
     <div class="row justify-content-center">
@@ -11,7 +11,7 @@
             </div>
         </div>
     </div>
-    <div class="justify-content-center margin">
-        <div class="mx-auto card bg-dark col-10" [innerHtml]="bio | async"></div>
+    <div class="row justify-content-center top-margin">
+        <div class="mx-auto bg-dark col-10 border-0" [innerHtml]="bio | async"></div>
     </div>
 </div>
