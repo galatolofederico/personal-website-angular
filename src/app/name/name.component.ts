@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import Typed from 'typed.js';
+import { DataService } from '../data.service';
+import {Observer} from 'rxjs/Rx'
 
 @Component({
   selector: 'app-name',
@@ -7,18 +9,24 @@ import Typed from 'typed.js';
   styleUrls: ['./name.component.scss']
 })
 export class NameComponent implements OnInit {
-
-  constructor() { }
+  name : Observer<string>;
+  picture: Observer<string>;
+  constructor(private data: DataService) { }
 
   ngOnInit() {
-    var typed = new Typed("#typed", {
-        strings: ["PhD Student", "Machine Learning Engineer", "Computer Engineer"],
-        showCursor: false,
-        typeSpeed: 60,
-        backSpeed: 30,
-        backDelay: 1000,
-        loop: true
-    });
+    this.data.getQualifications().subscribe(qualifications => {
+      if (qualifications.length > 0)
+        var typed = new Typed("#typed", {
+            strings: qualifications,
+            showCursor: false,
+            typeSpeed: 60,
+            backSpeed: 30,
+            backDelay: 1000,
+            loop: true
+          });
+    })
+    this.name = this.data.getName();
+    this.picture = this.data.getPicture();
   }
 
 }
