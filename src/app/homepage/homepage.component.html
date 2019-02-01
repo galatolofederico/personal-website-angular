@@ -3,3 +3,14 @@
         <app-name class="card col-10 h-75"></app-name>
     </div>
 </div>
+<div class="container h-50">
+    <div class="row justify-content-center align-items-start h-20">
+        <div class="card col-6">
+            <div class="row text-center">
+                <ng-container *ngFor="let platform of platforms">
+                    <app-icon class="col mx-auto" icon="{{platform.icon}}"></app-icon>
+                </ng-container>
+            </div>
+        </div>
+    </div>
+</div>
