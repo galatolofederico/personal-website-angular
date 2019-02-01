@@ -2,7 +2,7 @@
     <div class="row justify-content-center">
         <app-name class="col-10"></app-name>
     </div>
-    <div class="row justify-content-center">
+    <div class="row justify-content-center top-margin-10">
         <div class="col-8">
             <div class="row text-center">
                 <ng-container *ngFor="let profile of profiles">
@@ -11,7 +11,7 @@
             </div>
         </div>
     </div>
-    <div class="row justify-content-center top-margin">
+    <div class="row justify-content-center top-margin-50">
         <div class="mx-auto bg-dark col-10 border-0" [innerHtml]="bio | async"></div>
     </div>
 </div>
