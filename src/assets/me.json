@@ -240,6 +240,7 @@
     "lectures":[
         {
             "title": "Ionic 3 Framework",
+            "name" : "ionic2017",
             "position": "Univeristy of Pisa - Pisa",
             "container": "Programmazione",
             "date":{
@@ -256,6 +257,7 @@
         },
         {
             "title": "Versioning with GIT",
+            "name" : "git2018",
             "position": "Univeristy of Pisa - Pisa",
             "container": "Programmazione Avanzata",
             "date":{
@@ -276,6 +278,7 @@
         },
         {
             "title": "Progressive Web Apps with Polymer",
+            "name" : "polymer2018",
             "position": "Univeristy of Pisa - Pisa",
             "container": "Programmazione Avanzata",
             "date":{
@@ -300,6 +303,7 @@
         },
         {
             "title": "Webservices with Express and NodeJS",
+            "name" : "backend2018",
             "position": "Univeristy of Pisa - Pisa",
             "container": "Programmazione Avanzata",
             "date":{
@@ -324,6 +328,7 @@
         },
         {
             "title": "Using stigmergy to incorporate the time into artificial neural networks",
+            "name" : "mike2018",
             "position": "Technical University of Cluj-Napoca - Cluj-Napoca",
             "container": "MIKE2018",
             "date":{

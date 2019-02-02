@@ -14,7 +14,8 @@ import { FooterComponent } from './footer/footer.component';
 import { PublicationsComponent } from './publications/publications.component';
 import { ItemComponent } from './item/item.component';
 import { PublicationComponent } from './publication/publication.component';
-import { ProjectsComponent } from './projects/projects.component'
+import { ProjectsComponent } from './projects/projects.component';
+import { LecturesComponent } from './lectures/lectures.component'
 
 @NgModule({
   declarations: [
@@ -28,6 +29,7 @@ import { ProjectsComponent } from './projects/projects.component'
     ItemComponent,
     PublicationComponent,
     ProjectsComponent,
+    LecturesComponent,
   ],
   imports: [
     BrowserModule,

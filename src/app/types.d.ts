@@ -32,3 +32,11 @@ type Project = {
     link: string,
     date: any
 }
+
+type Lecture = {
+    title: string,
+    position: string,
+    container: string,
+    date: any,
+    resources: Array<any>,
+}

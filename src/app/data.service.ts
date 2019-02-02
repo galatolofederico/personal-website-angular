@@ -13,6 +13,7 @@ export class DataService {
   qualifications : BehaviorSubject<Array<string>> = new BehaviorSubject<Array<string>>([]);
   publications: BehaviorSubject<Array<Publication>> = new BehaviorSubject<Array<Publication>>([]);
   projects : BehaviorSubject<Array<Project>> = new BehaviorSubject<Array<Project>>([]);
+  lectures : BehaviorSubject<Array<Lecture>> = new BehaviorSubject<Array<Lecture>>([]);
 
   profiles : Array<Profile> = new Array<Profile>();
 
@@ -20,6 +21,7 @@ export class DataService {
     let _qualifications = [];
     let _publications = [];
     let _projects = [];
+    let _lectures = [];
 
     this.http.get("assets/me.json").subscribe((data: MeJson) => {
       this.name.next(this._parseName(data.anagraphic.fullname))
@@ -58,6 +60,10 @@ export class DataService {
       }
       this.projects.next(_projects.sort(this._sortDate))
 
+      for(let lecture of data.lectures){
+        _lectures.push(lecture)
+      }
+      this.lectures.next(_lectures.sort(this._sortDate))
     })
   }
 
@@ -103,5 +109,9 @@ export class DataService {
 
   getProjects(){
     return this.projects
+  }
+
+  getLectures(){
+    return this.lectures
   }
 }
