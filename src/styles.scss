@@ -11,14 +11,9 @@ html {
     background-color: #42484e !important;
 }
 
-.top-margin-50 {
-    margin-top: 50px;
-}
-
-.top-margin-10 {
-    margin-top: 10px;
-}
-
+.flex-fill {
+    flex:1 1 auto;
+ }
 
 @include media-breakpoint-up(xs) {
     html {

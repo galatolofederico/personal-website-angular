@@ -1,8 +1,9 @@
 type MeJson = {
     anagraphic: any,
     digitalidentity: any,
-    publications: any,
-    projects: any
+    publications: Array<Publication>,
+    projects: Array<Software>,
+    lectures: any
 }
 
 type Profile = {
@@ -21,4 +22,12 @@ type Publication = {
     abstract: string,
     date: any,
     name: string,
+}
+
+
+type Software = {
+    title: string,
+    description: string,
+    link: string,
+    date: any
 }

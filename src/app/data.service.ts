@@ -12,12 +12,15 @@ export class DataService {
 
   qualifications : BehaviorSubject<Array<string>> = new BehaviorSubject<Array<string>>([]);
   publications: BehaviorSubject<Array<Publication>> = new BehaviorSubject<Array<Publication>>([]);
+  software : BehaviorSubject<Array<Software>> = new BehaviorSubject<Array<Software>>([]);
 
   profiles : Array<Profile> = new Array<Profile>();
 
   constructor(private http: HttpClient) {
     let _qualifications = [];
     let _publications = [];
+    let _software = [];
+
     this.http.get("assets/me.json").subscribe((data: MeJson) => {
       this.name.next(this._parseName(data.anagraphic.fullname))
       this.picture.next(data.anagraphic.picture)
@@ -26,7 +29,7 @@ export class DataService {
       data.digitalidentity.profiles.forEach(profile => {
         this.profiles.push(profile)
       })
-      for(var publication of data.publications){
+      for(let publication of data.publications){
         _publications.push(publication)
       }
       this.publications.next(_publications.sort((a,b) => {
@@ -38,10 +41,16 @@ export class DataService {
           return -1;
       }))
 
-      for (var qualification of data.anagraphic.qualifications){
+      for (let qualification of data.anagraphic.qualifications){
         _qualifications.push(qualification)
       }
       this.qualifications.next(_qualifications)
+
+      for(let soft of data.projects){
+        _software.push(soft)
+      }
+      this.software.next(_software)
+
     })
   }
 
@@ -74,5 +83,9 @@ export class DataService {
 
   getPublications(){
     return this.publications
+  }
+
+  getSoftware(){
+    return this.software
   }
 }

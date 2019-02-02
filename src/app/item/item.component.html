@@ -1,10 +1,11 @@
 <div class="card" [ngClass]="cardclass">
-  <div class="card-body">
+  <div class="card-body d-flex flex-column">
     <h4 class="card-title">{{title}}</h4>
     <h6 class="card-subtitle mb-2 text-muted">{{subtitle}}</h6>
     <p class="card-text">{{description}}</p>
-    <div class="row">
-        <a routerLink="{{link}}" class="btn btn-primary mx-auto">{{linktitle}}</a>
+    <div class="row align-items-end flex-fill">
+        <a *ngIf="linktype == 'external'" href="{{link}}" class="btn btn-primary mx-auto">{{linktitle}}</a>
+        <a *ngIf="linktype == 'internal'" routerLink="{{link}}" class="btn btn-primary mx-auto">{{linktitle}}</a>
     </div>
   </div>
 </div>

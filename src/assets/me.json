@@ -168,7 +168,7 @@
         },
         {
             "title": "dotfiles",
-            "description": "Dotfiles for my Arch Linux meta-distribution",
+            "description": "Configuration files for my minimal Arch Linux i3/urxvt meta-distribution",
             "afferences": ["linux", "personal"],
             "date": {
                 "day": 24,

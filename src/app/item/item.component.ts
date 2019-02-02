@@ -12,6 +12,7 @@ export class ItemComponent implements OnInit {
   @Input() link;
   @Input("link-title") linktitle;
   @Input() cardclass;
+  @Input("link-type") linktype = "internal";
   constructor() { }
 
   ngOnInit() {
