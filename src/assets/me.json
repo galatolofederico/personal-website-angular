@@ -237,6 +237,110 @@
             "link": "https://github.com/galatolofederico/personal-site"
         }
     ],
-    "education":[
+    "lectures":[
+        {
+            "title": "Ionic 3 Framework",
+            "position": "Univeristy of Pisa - Pisa",
+            "container": "Programmazione",
+            "date":{
+                "day": 1,
+                "month": 11,
+                "year": 2017
+            },
+            "resources": [
+                {
+                    "name": "Slides",
+                    "link": "https://docs.google.com/presentation/d/15udEI1-UpJO8NN0Dp0Q6hUtO9whBzQFzakTiPh3WK4I/edit#slide=id.p"
+                }
+            ]
+        },
+        {
+            "title": "Versioning with GIT",
+            "position": "Univeristy of Pisa - Pisa",
+            "container": "Programmazione Avanzata",
+            "date":{
+                "day": 1,
+                "month": 11,
+                "year": 2018
+            },
+            "resources": [
+                {
+                    "name": "Slides PPTX",
+                    "link": "https://drive.google.com/open?id=1gG3p_lKpkcYDuKdkQPem4gnldAgZalmF"
+                },
+                {
+                    "name": "Slides PDF",
+                    "link": "https://drive.google.com/open?id=1DFhDEY1Blnimg4WFudNcJwSjBPtHnGwo"
+                }
+            ]
+        },
+        {
+            "title": "Progressive Web Apps with Polymer",
+            "position": "Univeristy of Pisa - Pisa",
+            "container": "Programmazione Avanzata",
+            "date":{
+                "day": 1,
+                "month": 11,
+                "year": 2018
+            },
+            "resources": [
+                {
+                    "name": "Slides PPTX",
+                    "link": "https://drive.google.com/open?id=1G4ov_FALVkFQw2sdGQ87hkHi3eWUgD_r"
+                },
+                {
+                    "name": "Slides PDF",
+                    "link": "https://drive.google.com/open?id=16wXQD8YcVsxT6hpMMOAdfvyn6njI8yeN"
+                },
+                {
+                    "name": "Code",
+                    "link": "https://github.com/galatolofederico/workshop-2018/tree/master/webapp"
+                }
+            ]
+        },
+        {
+            "title": "Webservices with Express and NodeJS",
+            "position": "Univeristy of Pisa - Pisa",
+            "container": "Programmazione Avanzata",
+            "date":{
+                "day": 1,
+                "month": 11,
+                "year": 2018
+            },
+            "resources": [
+                {
+                    "name": "Slides PPTX",
+                    "link": "https://drive.google.com/open?id=1waE8yYv0IZrU5xx5ev3W4ybQTQJVkwPO"
+                },
+                {
+                    "name": "Slides PDF",
+                    "link": "https://drive.google.com/open?id=1_iS3Eeu6PrOQy13PtbhDH9yC6CK2SU6V"
+                },
+                {
+                    "name": "Code",
+                    "link": "https://github.com/galatolofederico/workshop-2018/tree/master/webapp"
+                }
+            ]
+        },
+        {
+            "title": "Using stigmergy to incorporate the time into artificial neural networks",
+            "position": "Technical University of Cluj-Napoca - Cluj-Napoca",
+            "container": "MIKE2018",
+            "date":{
+                "day": 20,
+                "month": 12,
+                "year": 2018
+            },
+            "resources": [
+                {
+                    "name": "Slides PPTX",
+                    "link": "https://drive.google.com/open?id=18pQfJji6-mAONBOCm6L5f2XCF2IYY_uJ"
+                },
+                {
+                    "name": "Slides PDF",
+                    "link": "https://drive.google.com/open?id=1wq4hGgmGOMqwfyKpbb-V1NgvchYSyclC"
+                }
+            ]
+        }
     ]
 }
