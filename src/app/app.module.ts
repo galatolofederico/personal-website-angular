@@ -14,6 +14,7 @@ import { FooterComponent } from './footer/footer.component';
 import { PublicationsComponent } from './publications/publications.component';
 import { ItemComponent } from './item/item.component';
 import { SortByDatePipe } from './sort-by-date.pipe';
+import { PublicationComponent } from './publication/publication.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import { SortByDatePipe } from './sort-by-date.pipe';
     PublicationsComponent,
     ItemComponent,
     SortByDatePipe,
+    PublicationComponent,
   ],
   imports: [
     BrowserModule,

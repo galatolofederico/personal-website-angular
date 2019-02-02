@@ -3,7 +3,7 @@
     <h2 class="col-6 text-center top-margin-10">Publications</h2>
   </div>
   <div class="row justify-content-center">
-    <ng-container *ngFor="let publication of publications">
+    <ng-container *ngFor="let publication of publications | async">
         <app-item class="col-10 mt-3 mb-3" cardclass="bg-light-dark" 
         description="{{(publication.abstract | slice:0:500) + '...' }}"
         title="{{publication.title}}" type="{{publication.type}} ({{publication.date.year}})" 

@@ -2,10 +2,12 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import {HomepageComponent} from './homepage/homepage.component'
 import {PublicationsComponent} from "./publications/publications.component"
+import {PublicationComponent} from "./publication/publication.component"
 
 const routes: Routes = [
   {path:"", component: HomepageComponent},
-  {path:"publications", component: PublicationsComponent}
+  {path:"publications", component: PublicationsComponent},
+  {path: "publication/:name", component: PublicationComponent}
 ];
 
 @NgModule({
