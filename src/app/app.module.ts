@@ -15,7 +15,8 @@ import { PublicationsComponent } from './publications/publications.component';
 import { ItemComponent } from './item/item.component';
 import { PublicationComponent } from './publication/publication.component';
 import { ProjectsComponent } from './projects/projects.component';
-import { LecturesComponent } from './lectures/lectures.component'
+import { LecturesComponent } from './lectures/lectures.component';
+import { LectureComponent } from './lecture/lecture.component'
 
 @NgModule({
   declarations: [
@@ -30,6 +31,7 @@ import { LecturesComponent } from './lectures/lectures.component'
     PublicationComponent,
     ProjectsComponent,
     LecturesComponent,
+    LectureComponent,
   ],
   imports: [
     BrowserModule,

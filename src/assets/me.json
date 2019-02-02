@@ -172,7 +172,7 @@
         },
         {
             "title": "dotfiles",
-            "description": "Configuration files for my minimal Arch Linux i3/urxvt meta-distribution",
+            "description": "Dotfiles files for my Arch Linux meta-distribution",
             "afferences": ["linux", "personal"],
             "date": {
                 "day": 24,
@@ -226,7 +226,7 @@
             "link": "https://github.com/galatolofederico/mike2018"
         },
         {
-            "title": "Personal Site",
+            "title": "galatolo.me",
             "description": "Personal website realized with Angular 7 and Boostrap 4",
             "afferences": ["personal"],
             "date": {

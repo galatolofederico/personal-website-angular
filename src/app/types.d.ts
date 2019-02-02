@@ -35,6 +35,7 @@ type Project = {
 
 type Lecture = {
     title: string,
+    name: string,
     position: string,
     container: string,
     date: any,
