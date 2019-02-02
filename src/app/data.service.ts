@@ -10,7 +10,7 @@ export class DataService {
   picture: BehaviorSubject<string> = new BehaviorSubject<string>("");
   bio: BehaviorSubject<string> = new BehaviorSubject<string>("");
 
-  qualifications : BehaviorSubject<Array<string>> = new BehaviorSubject<Array<string>>([""]);
+  qualifications : BehaviorSubject<Array<string>> = new BehaviorSubject<Array<string>>([]);
   publications: BehaviorSubject<Array<Publication>> = new BehaviorSubject<Array<Publication>>([]);
 
   profiles : Array<Profile> = new Array<Profile>();

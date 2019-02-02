@@ -6,7 +6,7 @@
     <ng-container *ngFor="let publication of publications | async">
         <app-item class="col-10 mt-3 mb-3" cardclass="bg-light-dark" 
         description="{{(publication.abstract | slice:0:500) + '...' }}"
-        title="{{publication.title}}" type="{{publication.type}} ({{publication.date.year}})" 
+        title="{{publication.title}}" subtitle="{{publication.authors}}" 
         link="/publication/{{publication.name}}" link-title="See more"></app-item>
     </ng-container>
   </div>

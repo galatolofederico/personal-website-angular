@@ -16,9 +16,9 @@
         "qualifications": ["PhD Student", "Machine Learning Engineer", "Computer Engineer", "Open Source Enthusiast"]
     },
     "digitalidentity":{
-        "telephone": "galatol",
-        "website": "galatolo",
-        "email": "galatolo",
+        "telephone": "+390502217454",
+        "website": "https://galatolo.me",
+        "email": "federico.galatolo@ing.unipi.it",
         "profiles":[
             {
                 "platform": "GitHub",
@@ -111,7 +111,127 @@
         }
     ],
     "projects":[
-
+        {
+            "title": "Slope",
+            "description": "Super Light Objective Processor Emulator (aka slope) is a very light and simple virtual machine for an object-oriented processor. The entire project was realized for an university exam, so it is not complete or usable in real life.",
+            "afferences": ["unipi", "school-project"],
+            "date": {
+                "day": 14,
+                "month": 1,
+                "year": 2017
+            },
+            "link": "https://github.com/galatolofederico/slope"
+        },
+        {
+            "title": "Isaac Optimization Framework",
+            "description": "Isaac was born with the intent to fill the gap between high level description capabilities of the modern programming languages and the optimizations algorithms. With isaac you can model your optimization problems using all the expressive power of Python",
+            "afferences": ["research", "personal"],
+            "date": {
+                "day": 28,
+                "month": 3,
+                "year": 2018
+            },
+            "link": "https://github.com/galatolofederico/isaac-framework"
+        },
+        {
+            "title": "Sacred Retrieve",
+            "description": "Python script for easily retrieving and processing results from a sacred mongodb collection",
+            "afferences": ["unipi", "research"],
+            "date": {
+                "day": 28,
+                "month": 10,
+                "year": 2018
+            },
+            "link": "https://github.com/galatolofederico/sacred-retrieve"
+        },
+        {
+            "title": "torchsnn",
+            "description": "pytorch implementation of the Stigmergic Neural Networks as presented in the paper Using stigmergy to incorporate the time into artificial neural networks.",
+            "afferences": ["unipi", "research"],
+            "date": {
+                "day": 15,
+                "month": 11,
+                "year": 2018
+            },
+            "link": "https://github.com/galatolofederico/torchsnn"
+        },
+        {
+            "title": "Pytorch MNIST Stroke",
+            "description": "PyTorch helper Dataset class for downloading and parsing the MNIST digits stroke sequence data dataset.            ",
+            "afferences": ["unipi", "research"],
+            "date": {
+                "day": 1,
+                "month": 12,
+                "year": 2018
+            },
+            "link": "https://github.com/galatolofederico/pytorch-mnist-stroke"
+        },
+        {
+            "title": "dotfiles",
+            "description": "Dotfiles for my Arch Linux meta-distribution",
+            "afferences": ["linux", "personal"],
+            "date": {
+                "day": 24,
+                "month": 12,
+                "year": 2018
+            },
+            "link": "https://github.com/galatolofederico/dotfiles"
+        },
+        {
+            "title": "torchsm",
+            "description": "Pytorch implementation of the Stigmergic Memory as presented in the paper Using stigmergy as a computational memory in the design of recurrent neural networks.",
+            "afferences": ["unipi", "research"],
+            "date": {
+                "day": 14,
+                "month": 1,
+                "year": 2019
+            },
+            "link": "https://github.com/galatolofederico/torchsm"
+        },
+        {
+            "title": "torchreinforce",
+            "description": "A pythonic implementation of the REINFORCE algorithm that is actually fun to use",
+            "afferences": ["research", "personal"],
+            "date": {
+                "day": 20,
+                "month": 1,
+                "year": 2019
+            },
+            "link": "https://github.com/galatolofederico/torchreinforce"
+        },
+        {
+            "title": "icpram2019",
+            "description": "Implementation of the experiments proposed in the paper Using stigmergy as a computational memory in the design of recurrent neural networks.",
+            "afferences": ["unipi", "research"],
+            "date": {
+                "day": 17,
+                "month": 1,
+                "year": 2019
+            },
+            "link": "https://github.com/galatolofederico/icpram2019"
+        },
+        {
+            "title": "mike2018",
+            "description": "Implementation of the experiments proposed in the paper Using stigmergy to incorporate the time into artificial neural networks.",
+            "afferences": ["unipi", "research"],
+            "date": {
+                "day": 26,
+                "month": 10,
+                "year": 2018
+            },
+            "link": "https://github.com/galatolofederico/mike2018"
+        },
+        {
+            "title": "Personal Site",
+            "description": "Personal website realized with Angular 7 and Boostrap 4",
+            "afferences": ["personal"],
+            "date": {
+                "day": 1,
+                "month": 2,
+                "year": 2019
+            },
+            "link": "https://github.com/galatolofederico/personal-site"
+        }
     ],
     "education":[
     ]

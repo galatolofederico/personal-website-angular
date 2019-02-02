@@ -15,6 +15,7 @@ import { PublicationsComponent } from './publications/publications.component';
 import { ItemComponent } from './item/item.component';
 import { SortByDatePipe } from './sort-by-date.pipe';
 import { PublicationComponent } from './publication/publication.component';
+import { SoftwareComponent } from './software/software.component';
 
 @NgModule({
   declarations: [
@@ -28,6 +29,7 @@ import { PublicationComponent } from './publication/publication.component';
     ItemComponent,
     SortByDatePipe,
     PublicationComponent,
+    SoftwareComponent,
   ],
   imports: [
     BrowserModule,
