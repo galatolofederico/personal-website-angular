@@ -21,24 +21,28 @@
         "email": "federico.galatolo@ing.unipi.it",
         "profiles":[
             {
+                "platform": "Telegram",
+                "link": "https://telegram.me/galatolo",
+                "icon": "fab-telegram",
+                "description": "Send me a chat message"
+            },
+            {
                 "platform": "GitHub",
                 "link": "https://github.com/galatolofederico",
-                "icon": "github"
+                "icon": "fab-github",
+                "description": "The home of my projects!"
             },
             {
                 "platform": "LinkedIn",
                 "link": "https://www.linkedin.com/in/galatolo/",
-                "icon": "linkedin"
+                "icon": "fab-linkedin",
+                "description": "Offer me a job!"
             },
             {
                 "platform": "Instagram",
                 "link": "https://www.instagram.com/notsosocial/",
-                "icon": "instagram"   
-            },
-            {
-                "platform": "Telegram",
-                "link": "https://telegram.me/galatolo",
-                "icon": "telegram"
+                "icon": "fab-instagram",
+                "description": "I post a picture once a year"
             }
         ]
     },

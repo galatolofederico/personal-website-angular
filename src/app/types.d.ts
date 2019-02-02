@@ -9,7 +9,8 @@ type MeJson = {
 type Profile = {
     platform: string,
     link: string,
-    icon: string
+    icon: string,
+    description: string
 }
 
 type Publication = {

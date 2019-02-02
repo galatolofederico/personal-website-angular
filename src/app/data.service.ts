@@ -25,7 +25,21 @@ export class DataService {
       this.name.next(this._parseName(data.anagraphic.fullname))
       this.picture.next(data.anagraphic.picture)
       this.bio.next(data.anagraphic.bio)
+      
+      this.profiles.push({
+        platform: "phone",
+        link: "tel:"+data.digitalidentity.telephone,
+        icon: "fas-phone",
+        description: "Call me!"
+      })
 
+      this.profiles.push({
+        platform: "email",
+        link: "mailto:"+data.digitalidentity.email,
+        icon: "fas-envelope",
+        description: "Send me an email!"
+      })
+      
       data.digitalidentity.profiles.forEach(profile => {
         this.profiles.push(profile)
       })

@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { DataService } from '../data.service';
-import { library } from '@fortawesome/fontawesome-svg-core';
+import { library, } from '@fortawesome/fontawesome-svg-core';
 import { fab } from '@fortawesome/free-brands-svg-icons';
+import { fas } from '@fortawesome/free-solid-svg-icons'
 import {Observer} from 'rxjs/Rx'
 
 @Component({
@@ -14,7 +15,7 @@ export class HomepageComponent implements OnInit {
   profiles: Array<Profile>;
   
   constructor(private data: DataService) {
-    library.add(fab)
+    library.add(fab, fas)
   }
 
   ngOnInit() {
