@@ -2,7 +2,7 @@ type MeJson = {
     anagraphic: any,
     digitalidentity: any,
     publications: Array<Publication>,
-    projects: Array<Software>,
+    projects: Array<Project>,
     lectures: any
 }
 
@@ -26,7 +26,7 @@ type Publication = {
 }
 
 
-type Software = {
+type Project = {
     title: string,
     description: string,
     link: string,

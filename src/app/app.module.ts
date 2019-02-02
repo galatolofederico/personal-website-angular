@@ -13,9 +13,8 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
 import { PublicationsComponent } from './publications/publications.component';
 import { ItemComponent } from './item/item.component';
-import { SortByDatePipe } from './sort-by-date.pipe';
 import { PublicationComponent } from './publication/publication.component';
-import { SoftwareComponent } from './software/software.component';
+import { ProjectsComponent } from './projects/projects.component'
 
 @NgModule({
   declarations: [
@@ -27,9 +26,8 @@ import { SoftwareComponent } from './software/software.component';
     FooterComponent,
     PublicationsComponent,
     ItemComponent,
-    SortByDatePipe,
     PublicationComponent,
-    SoftwareComponent,
+    ProjectsComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,12 @@
+<div class="container">
+    <div class="row justify-content-center ">
+      <h2 class="col-6 text-center top-margin-10">Projects</h2>
+    </div>
+    <div class="row justify-content-center">
+      <ng-container *ngFor="let project of projects | async">
+          <app-item class="col-6 mt-3 mb-3 d-flex align-items-stretch" cardclass="bg-light-dark" 
+          description="{{(project.description.length > 200) ? (project.description | slice:0:200) + '...' : project.description}}"
+          title="{{project.title}}" link="{{project.link}}" link-title="Go to project" link-type="external"></app-item>
+      </ng-container>
+    </div>
+  </div>

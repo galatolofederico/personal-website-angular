@@ -12,14 +12,14 @@ export class DataService {
 
   qualifications : BehaviorSubject<Array<string>> = new BehaviorSubject<Array<string>>([]);
   publications: BehaviorSubject<Array<Publication>> = new BehaviorSubject<Array<Publication>>([]);
-  software : BehaviorSubject<Array<Software>> = new BehaviorSubject<Array<Software>>([]);
+  projects : BehaviorSubject<Array<Project>> = new BehaviorSubject<Array<Project>>([]);
 
   profiles : Array<Profile> = new Array<Profile>();
 
   constructor(private http: HttpClient) {
     let _qualifications = [];
     let _publications = [];
-    let _software = [];
+    let _projects = [];
 
     this.http.get("assets/me.json").subscribe((data: MeJson) => {
       this.name.next(this._parseName(data.anagraphic.fullname))
@@ -60,10 +60,10 @@ export class DataService {
       }
       this.qualifications.next(_qualifications)
 
-      for(let soft of data.projects){
-        _software.push(soft)
+      for(let project of data.projects){
+        _projects.push(project)
       }
-      this.software.next(_software)
+      this.projects.next(_projects)
 
     })
   }
@@ -99,7 +99,7 @@ export class DataService {
     return this.publications
   }
 
-  getSoftware(){
-    return this.software
+  getProjects(){
+    return this.projects
   }
 }
