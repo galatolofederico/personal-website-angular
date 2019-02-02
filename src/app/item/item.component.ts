@@ -8,6 +8,7 @@ import { Component, OnInit, Input } from '@angular/core';
 export class ItemComponent implements OnInit {
   @Input() description;
   @Input() title;
+  @Input() type;
   @Input() link;
   @Input("link-title") linktitle;
   @Input() cardclass;

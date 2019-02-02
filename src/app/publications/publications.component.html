@@ -6,7 +6,7 @@
     <ng-container *ngFor="let publication of publications">
         <app-item class="col-10 mt-3 mb-3" cardclass="bg-light-dark" 
         description="{{(publication.abstract | slice:0:500) + '...' }}"
-        title="{{publication.title}}" link-title="See more"></app-item>
+        title="{{publication.title}}" type="{{publication.type}}" link-title="See more"></app-item>
     </ng-container>
   </div>
 </div>
