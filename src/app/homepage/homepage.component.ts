@@ -12,7 +12,7 @@ import {Observer} from 'rxjs/Rx'
 })
 export class HomepageComponent implements OnInit {
   bio: Observer<string>;
-  profiles: Array<Profile>;
+  profiles: Observer<Array<Profile>>;
   
   constructor(private data: DataService) {
     library.add(fab, fas)

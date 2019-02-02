@@ -14,37 +14,39 @@ export class DataService {
   publications: BehaviorSubject<Array<Publication>> = new BehaviorSubject<Array<Publication>>([]);
   projects : BehaviorSubject<Array<Project>> = new BehaviorSubject<Array<Project>>([]);
   lectures : BehaviorSubject<Array<Lecture>> = new BehaviorSubject<Array<Lecture>>([]);
-
-  profiles : Array<Profile> = new Array<Profile>();
+  profiles : BehaviorSubject<Array<Profile>> = new BehaviorSubject<Array<Profile>>([]);
 
   constructor(private http: HttpClient) {
     let _qualifications = [];
     let _publications = [];
     let _projects = [];
     let _lectures = [];
+    let _profiles = []
 
     this.http.get("assets/me.json").subscribe((data: MeJson) => {
       this.name.next(this._parseName(data.anagraphic.fullname))
       this.picture.next(data.anagraphic.picture)
       this.bio.next(data.anagraphic.bio)
       
-      this.profiles.push({
+      _profiles.push({
         platform: "phone",
         link: "tel:"+data.digitalidentity.telephone,
         icon: "fas-phone",
         description: "Call me!"
       })
 
-      this.profiles.push({
+      _profiles.push({
         platform: "email",
         link: "mailto:"+data.digitalidentity.email,
         icon: "fas-envelope",
         description: "Send me an email!"
       })
       
-      data.digitalidentity.profiles.forEach(profile => {
-        this.profiles.push(profile)
-      })
+      for(let profile of data.digitalidentity.profiles){
+        _profiles.push(profile)
+      }
+      this.profiles.next(_profiles)
+      
       for(let publication of data.publications){
         _publications.push(publication)
       }
