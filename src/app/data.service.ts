@@ -11,12 +11,13 @@ export class DataService {
   bio: BehaviorSubject<string> = new BehaviorSubject<string>("");
 
   qualifications : BehaviorSubject<Array<string>> = new BehaviorSubject<Array<string>>([""]);
+  publications: BehaviorSubject<Array<Publication>> = new BehaviorSubject<Array<Publication>>([]);
 
   profiles : Array<Profile> = new Array<Profile>();
-  publications: Array<Publication> = new Array<Publication>();
 
   constructor(private http: HttpClient) {
-    var _qualifications = [];
+    let _qualifications = [];
+    let _publications = [];
     this.http.get("assets/me.json").subscribe((data: MeJson) => {
       this.name.next(this._parseName(data.anagraphic.fullname))
       this.picture.next(data.anagraphic.picture)
@@ -26,16 +27,16 @@ export class DataService {
         this.profiles.push(profile)
       })
       for(var publication of data.publications){
-        this.publications.push(publication)
+        _publications.push(publication)
       }
-      this.publications = this.publications.sort((a,b) => {
+      this.publications.next(_publications.sort((a,b) => {
         if(new Date(a.date.year, a.date.month, a.date.day)
         <
         new Date(b.date.year, b.date.month, b.date.day))
           return 1;
         else
           return -1;
-      })
+      }))
 
       for (var qualification of data.anagraphic.qualifications){
         _qualifications.push(qualification)
