@@ -12,6 +12,7 @@ import { IconComponent } from './icon/icon.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
 import { PublicationsComponent } from './publications/publications.component';
+import { ItemComponent } from './item/item.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { PublicationsComponent } from './publications/publications.component';
     NavbarComponent,
     FooterComponent,
     PublicationsComponent,
+    ItemComponent,
   ],
   imports: [
     BrowserModule,

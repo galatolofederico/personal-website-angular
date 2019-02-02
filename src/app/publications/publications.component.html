@@ -1,3 +1,11 @@
-<p>
-  publications works!
-</p>
+<div class="container">
+  <div class="row justify-content-center ">
+    <h2 class="col-6 text-center top-margin-10">Publications</h2>
+  </div>
+  <div class="row justify-content-center">
+    <ng-container *ngFor="let publication of publications">
+        <app-item class="bg-light-dark " description="{{(publication.abstract | slice:0:500) + '...' }}"
+        title="{{publication.title}}" link-title="See more"></app-item>
+    </ng-container>
+  </div>
+</div>

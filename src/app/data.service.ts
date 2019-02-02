@@ -13,7 +13,7 @@ export class DataService {
   qualifications : BehaviorSubject<Array<string>> = new BehaviorSubject<Array<string>>([""]);
 
   profiles : Array<Profile> = new Array<Profile>();
-  publications: Array<any> = new Array<any>();
+  publications: Array<Publication> = new Array<Publication>();
 
   constructor(private http: HttpClient) {
     var _qualifications = [];
@@ -61,5 +61,9 @@ export class DataService {
 
   getProfiles(){
     return this.profiles
+  }
+
+  getPublications(){
+    return this.publications
   }
 }

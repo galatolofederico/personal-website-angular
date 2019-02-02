@@ -8,6 +8,19 @@ html, body, main {
     font-family: 'Roboto', sans-serif;
 }
 
+.bg-light-dark {
+    background-color: #42484e !important;
+}
+
+.top-margin-50 {
+    margin-top: 50px;
+}
+
+.top-margin-10 {
+    margin-top: 10px;
+}
+
+
 @include media-breakpoint-up(xs) {
     html {
         font-size: 0.6rem;

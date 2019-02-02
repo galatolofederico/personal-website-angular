@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DataService } from '../data.service';
 
 @Component({
   selector: 'app-publications',
@@ -6,10 +7,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./publications.component.scss']
 })
 export class PublicationsComponent implements OnInit {
-
-  constructor() { }
+  publications: Array<Publication>
+  constructor(private data: DataService) { }
 
   ngOnInit() {
+    this.publications = this.data.getPublications()
   }
 
 }
