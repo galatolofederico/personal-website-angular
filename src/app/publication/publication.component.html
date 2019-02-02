@@ -2,12 +2,12 @@
   <div class="row justify-content-center ">
     <div class="col-10 card bg-light-dark">
         <div class="card-body">
-            <h4 class="card-title text-center">{{ (publication | async).title}}</h4>
-            <h6 class="card-title ">Year: {{ (publication | async).date.year}}</h6>
-            <h6 class="card-title ">Publisher: {{ (publication | async).container}}</h6>
-            <h6 class="card-title ">Doi: {{ (publication | async).doi}}</h6>
+            <h4 class="card-title text-center">{{ (publication | async)?.title}}</h4>
+            <h6 class="card-title ">Year: {{ (publication | async)?.date?.year}}</h6>
+            <h6 class="card-title ">Publisher: {{ (publication | async)?.container}}</h6>
+            <h6 class="card-title ">Doi: {{ (publication | async)?.doi}}</h6>
             
-            <p class="card-text">{{ (publication | async).abstract}}</p>
+            <p class="card-text">{{ (publication | async)?.abstract}}</p>
             <div class="row">
                 <a href="{{ (publication | async).link}}" class="btn btn-primary mx-auto">Read full text</a>
             </div>

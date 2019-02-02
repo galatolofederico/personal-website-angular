@@ -17,7 +17,7 @@ export class PublicationComponent implements OnInit {
     combineLatest(this.route.params.map(p => p.name), data.getPublications())
     .subscribe(([name, pubs]) => {
       pubs.forEach(pub => {
-        if (pub.name == name){this.publication.next(pub); console.log(pub) }
+        if (pub.name == name) this.publication.next(pub);
       })
     })
   }
