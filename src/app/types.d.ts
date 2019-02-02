@@ -19,5 +19,6 @@ type Publication = {
     isbn: string,
     doi: string,
     abstract: string,
-    date: string
+    date: any,
+    name: string,
 }

@@ -25,8 +25,16 @@ export class DataService {
       data.digitalidentity.profiles.forEach(profile => {
         this.profiles.push(profile)
       })
-      data.publications.forEach(publication => {
+      for(var publication of data.publications){
         this.publications.push(publication)
+      }
+      this.publications = this.publications.sort((a,b) => {
+        if(new Date(a.date.year, a.date.month, a.date.day)
+        <
+        new Date(b.date.year, b.date.month, b.date.day))
+          return 1;
+        else
+          return -1;
       })
 
       for (var qualification of data.anagraphic.qualifications){
