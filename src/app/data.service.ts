@@ -46,14 +46,7 @@ export class DataService {
       for(let publication of data.publications){
         _publications.push(publication)
       }
-      this.publications.next(_publications.sort((a,b) => {
-        if(new Date(a.date.year, a.date.month, a.date.day)
-        <
-        new Date(b.date.year, b.date.month, b.date.day))
-          return 1;
-        else
-          return -1;
-      }))
+      this.publications.next(_publications.sort(this._sortDate))
 
       for (let qualification of data.anagraphic.qualifications){
         _qualifications.push(qualification)
@@ -63,9 +56,18 @@ export class DataService {
       for(let project of data.projects){
         _projects.push(project)
       }
-      this.projects.next(_projects)
+      this.projects.next(_projects.sort(this._sortDate))
 
     })
+  }
+
+  _sortDate(a,b){
+    if(new Date(a.date.year, a.date.month, a.date.day)
+    <
+    new Date(b.date.year, b.date.month, b.date.day))
+      return 1;
+    else
+      return -1;
   }
 
   _parseName(fullname){
