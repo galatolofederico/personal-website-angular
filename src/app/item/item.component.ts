@@ -10,7 +10,7 @@ export class ItemComponent implements OnInit {
   @Input() title;
   @Input() link;
   @Input("link-title") linktitle;
-  @Input() class;
+  @Input() cardclass;
   constructor() { }
 
   ngOnInit() {
