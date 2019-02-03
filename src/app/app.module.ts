@@ -18,6 +18,9 @@ import { ProjectsComponent } from './projects/projects.component';
 import { LecturesComponent } from './lectures/lectures.component';
 import { LectureComponent } from './lecture/lecture.component'
 
+import { Angulartics2Module } from 'angulartics2';
+import { Angulartics2GoogleAnalytics } from 'angulartics2/ga';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -38,7 +41,8 @@ import { LectureComponent } from './lecture/lecture.component'
     AppRoutingModule,
     FontAwesomeModule,
     HttpClientModule,
-    NgbModule
+    NgbModule,
+    Angulartics2Module.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
