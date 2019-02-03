@@ -6,13 +6,13 @@
     <div class="collapse navbar-collapse" id="navbarCollapse" [ngClass]="{ 'show': navbarOpen }">
         <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link" routerLink="publications">Publications</a>
+              <a class="nav-link" routerLink="publications" (click)="closeNavbar()">Publications</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" routerLink="projects">Projects</a>
+              <a class="nav-link" routerLink="projects" (click)="closeNavbar()">Projects</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" routerLink="lectures">Lectures</a>
+              <a class="nav-link" routerLink="lectures" (click)="closeNavbar()">Lectures</a>
             </li>
         </ul>
     </div>
