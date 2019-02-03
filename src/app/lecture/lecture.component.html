@@ -1,1 +1,16 @@
-{{(lecture | async)?.title}}
+<div class="container">
+    <div class="row justify-content-center ">
+      <div class="col-10 card bg-light-dark">
+          <div class="card-body">
+              <h4 class="card-title text-center">{{ (lecture | async)?.title}}</h4>
+              <h6 class="card-subtitle text-center mt-3 mb-4">{{ (lecture | async)?.position}}</h6>
+              <h6 class="card-title mb-4">In the context of: {{ (lecture | async)?.container}}</h6>
+              <div class="row mt-4">
+                  <ng-container *ngFor="let resource of (lecture | async)?.resources">
+                    <a href="{{resource.link}}" class="btn btn-primary mx-auto">{{resource.name}}</a>
+                  </ng-container>
+              </div>
+          </div>
+      </div> 
+    </div>
+  </div>

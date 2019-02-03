@@ -11,8 +11,8 @@
             "year": 1993
         },
         "nationality": "Italian",
-        "picture": "https://via.placeholder.com/250",
-        "bio": "Very long description, Very long description, Very long description, Very long description, Very long description, Very long description, Very long description, Very long description, Very long description, Very long description, Very long description, Very long description, Very long description, Very long description, Very long description, Very long description, ",
+        "picture": "assets/profile.png",
+        "bio": "I received my Bachelor Degree in &quot;Ingegneria Informatica&quot; in September 2016, then my Master Degree in &quot;Computer Engineering&quot; in September 2018 and finally I&apos;m now a PhD student at the Department of Information Engineering. I always loved solving problems, writing code and inventing new stuff and now I'm basically paid to do so.",
         "qualifications": ["PhD Student", "Machine Learning Engineer", "Computer Engineer", "Open Source Enthusiast"]
     },
     "digitalidentity":{

@@ -1,3 +1,7 @@
 td {
     font-size: 1em;
 }
+
+.table-striped > tbody > tr:nth-child(2n) > td, .table-striped > tbody > tr:nth-child(2n) > th {
+    background-color: #42484e;
+}
