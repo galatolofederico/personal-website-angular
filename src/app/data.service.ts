@@ -6,6 +6,8 @@ import { Subject, BehaviorSubject } from 'rxjs';
   providedIn: 'root'
 })
 export class DataService {
+  mejson: string = "https://galatolo.me/me.json";
+
   name : BehaviorSubject<string> = new BehaviorSubject<string>("");
   picture: BehaviorSubject<string> = new BehaviorSubject<string>("");
   bio: BehaviorSubject<string> = new BehaviorSubject<string>("");
@@ -23,7 +25,7 @@ export class DataService {
     let _lectures = [];
     let _profiles = []
 
-    this.http.get("assets/me.json").subscribe((data: MeJson) => {
+    this.http.get(this.mejson).subscribe((data: MeJson) => {
       this.name.next(this._parseName(data.anagraphic.fullname))
       this.picture.next(data.anagraphic.picture)
       this.bio.next(data.anagraphic.bio)
