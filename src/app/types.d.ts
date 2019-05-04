@@ -3,6 +3,7 @@ type MeJson = {
     digitalidentity: any,
     publications: Array<Publication>,
     projects: Array<Project>,
+    advised_theses: Array<AdvisedThesis>,
     lectures: any
 }
 
@@ -23,6 +24,15 @@ type Publication = {
     abstract: string,
     date: any,
     name: string,
+}
+
+type AdvisedThesis = {
+    title: string,
+    author: string,
+    advisors: string,
+    link: string,
+    date: any,
+    type: string,
 }
 
 

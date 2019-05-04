@@ -1,0 +1,477 @@
+{
+    "anagraphic":{
+        "fullname":{
+            "first": "Federico",
+            "middle": "Andrea",
+            "last": "Galatolo"
+        },
+        "borndate":{
+            "day": 25,
+            "month": 3,
+            "year": 1993
+        },
+        "nationality": "Italian",
+        "picture": "https://galatolo.me/me.png",
+        "bio": "I received my Bachelor Degree in &quot;Ingegneria Informatica&quot; in September 2016, then my Master Degree in &quot;Computer Engineering&quot; in September 2018 and finally I&apos;m now a PhD student at the Department of Information Engineering. I always loved solving problems, writing code and inventing new stuff and now I'm basically paid to do so.",
+        "qualifications": ["PhD Student", "Machine Learning Engineer", "Computer Engineer", "Open Source Enthusiast"]
+    },
+    "digitalidentity":{
+        "telephone": "+390502217454",
+        "website": "https://galatolo.me",
+        "email": "federico.galatolo@ing.unipi.it",
+        "profiles":[
+            {
+                "platform": "Telegram",
+                "link": "https://telegram.me/galatolo",
+                "icon": "fab-telegram",
+                "description": "Send me a chat message"
+            },
+            {
+                "platform": "GitHub",
+                "link": "https://github.com/galatolofederico",
+                "icon": "fab-github",
+                "description": "The home of my projects!"
+            },
+            {
+                "platform": "LinkedIn",
+                "link": "https://www.linkedin.com/in/galatolo/",
+                "icon": "fab-linkedin",
+                "description": "Offer me a job!"
+            },
+            {
+                "platform": "Instagram",
+                "link": "https://www.instagram.com/notsosocial/",
+                "icon": "fab-instagram",
+                "description": "I post a picture once a year"
+            }
+        ]
+    },
+    "publications":[
+        {
+            "title": "Spikiness Assessment of Term Occurrences in Microblogs: an Approach Based on Computational Stigmergy",
+            "authors": "Mario G. C. A. Cimino, Federico Galatolo, Alessandro Lazzeri, Witold Pedrycz, Gigliola Vaglini",
+            "date": {
+                "day": 17,
+                "month": 5,
+                "year": 2017
+            },
+            "type": "conference",
+            "container": "Proceedings of the 6th International Conference on Pattern Recognition Applications and Methods - Volume 1: ICPRAM",
+            "keywords": ["stigmerigy", "artificial inteligence"],
+            "afferences": ["unipi"],
+            "volume" : "",
+            "issue": "",
+            "pages": "731-737",
+            "issn": "",
+            "isbn": "978-989-758-222-6",
+            "doi": "10.5220/0006253807310737",
+            "link": "http://www.iet.unipi.it/m.cimino/publications/cimino_pub50.pdf",
+            "abstract": "A significant phenomenon in microblogging is that certain occurrences of terms self-produce increasing mentions in the unfolding event. In contrast, other terms manifest a spike for each moment of interest, resulting in a wake-up-and-sleep dynamic. Since spike morphology and background vary widely between events, to detect spikes in microblogs is a challenge. Another way is to detect the spikiness feature rather than spikes. We present an approach which detects and aggregates spikiness contributions by combination of spike patterns, called archetypes. The soft similarity between each archetype and the time series of term occurrences is based on computational stigmergy, a bio-inspired scalar and temporal aggregation of samples. Archetypes are arranged into an architectural module called Stigmergic Receptive Field (SRF). The final spikiness indicator is computed through linear combination of SRFs, whose weights are determined with the Least Square Error minimization on a spikiness training set. The structural parameters of the SRFs are instead determined with the Differential Evolution algorithm, minimizing the error on a training set of archetypal series. Experimental studies have generated a spikiness indicator in a real-world scenario. The indicator has enhanced a cloud representation of social discussion topics, where the more spiky cloud terms are more blurred.",
+            "name": "spikiness_2017"
+        },
+        {
+            "title": "Using stigmergy to incorporate the time into artificial neural networks",
+            "authors": "Federico A. Galatolo, Mario G.C.A. Cimino, Gigliola Vaglini",
+            "date": {
+                "day": 21,
+                "month": 12,
+                "year": 2018
+            },
+            "type": "conference",
+            "container": "MIKE 2018: Mining Intelligence and Knowledge Exploration ",
+            "keywords": ["stigmerigy", "artificial inteligence", "neural networks"],
+            "afferences": ["unipi"],
+            "volume" : "Lecture Notes in Computer Science 11308",
+            "issue": "",
+            "pages": "248-258",
+            "issn": "",
+            "isbn": "",
+            "doi": "10.1007/978-3-030-05918-7_22",
+            "link": "http://www.iet.unipi.it/m.cimino/publications/cimino_pub62.pdf",
+            "abstract": "A current research trend in neurocomputing involves the design of novel artificial neural networks incorporating the concept of time into their operating model. In this paper, a novel architecture that employs stigmergy is proposed. Computational stigmergy is used to dynamically increase (or decrease) the strength of a connection, or the activation level, of an artificial neuron when stimulated (or released). This study lays down a basic framework for the derivation of a stigmergic NN with a related training algorithm. To show its potential, some pilot experiments have been reported. The XOR problem is solved by using only one single stigmergic neuron with one input and one output. A static NN, a stigmergic NN, a recurrent NN and a long short-term memory NN have been trained to solve the MNIST digits recognition benchmark.",
+            "name": "galatolosnn"
+        },
+        {
+            "title": "Using stigmergy as a computational memory in the design of recurrent neural networks",
+            "authors": "Federico A. Galatolo, Mario G. C. A. Cimino, Gigliola Vaglini",
+            "date": {
+                "day": 19,
+                "month": 1,
+                "year": 2019
+            },
+            "type": "conference",
+            "container": "ICPRAM",
+            "keywords": ["artificial inteligence", "neural networks"],
+            "afferences": ["unipi"],
+            "volume" : "1",
+            "issue": "",
+            "pages": "",
+            "issn": "",
+            "isbn": "978-989-758-351-3",
+            "doi": "10.5220/0007581508300836",
+            "link": "http://www.iet.unipi.it/m.cimino/publications/cimino_pub68.pdf",
+            "abstract": "In this paper, a novel architecture of Recurrent Neural Network (RNN) is designed and experimented. The proposed RNN adopts a computational memory based on the concept of stigmergy. The basic principle of a Stigmergic Memory (SM) is that the activity of deposit/removal of a quantity in the SM stimulates the next activities of deposit/removal. Accordingly, subsequent SM activities tend to reinforce/weaken each other, generating a coherent coordination between the SM activities and the input temporal stimulus. We show that, in a problem of supervised classification, the SM encodes the temporal input in an emergent representational model, by coordinating the deposit, removal and classification activities. This study lays down a basic framework for the derivation of a SM-RNN. A formal ontology of SM is discussed, and the SM-RNN architecture is detailed. To appreciate the computational power of an SM-RNN, comparative NNs have been selected and trained to solve the MNIST handwritten digits recognition benchmark in its two variants: spatial (sequences of bitmap rows) and temporal (sequences of pen strokes).",
+            "name": "galatolosm"
+        }
+    ],
+    "advised_theses":[
+        {
+            "title": "Progettazione di una rete neural ad attivazione stigmergica",
+            "author": "Fernando De Nitto",
+            "advisors": "Mario G.C.A. Cimino, Gigliola Vaglini, Federico A. Galatolo",
+            "type": "BS",
+            "date": {
+                "day": 20,
+                "month": 2,
+                "year":  2018
+            },
+            "link" : "#"
+        },
+        {
+            "title": "Analisi comparativa tra reti neurali ricorrenti e reti ad attivazione stigmergica",
+            "author": "Gabriele Martino",
+            "advisors": "Mario G.C.A. Cimino, Gigliola Vaglini, Federico A. Galatolo",
+            "type": "BS",
+            "date": {
+                "day": 23,
+                "month": 4,
+                "year": 2018 
+            },
+            "link" : "#"
+        },
+        {
+            "title": "Sleep behavior assessment via heart rate tracker devices and stigmergic receptive fields",
+            "author": "Luca Venturini",
+            "advisors": "Mario G.C.A. Cimino, Gigliola Vaglini, Federico A. Galatolo",
+            "type": "MS",
+            "date": {
+                "day": 25,
+                "month": 1,
+                "year": 2019 
+            },
+            "link" : "#"
+        },
+        {
+            "title": "Deep Learning of sleep quality based on ballistocardiographic sensors, stigmergic perceptrons and LSTM Networks",
+            "author": "Francesco Paolo Culcasi",
+            "advisors": "Mario G.C.A. Cimino, Gigliola Vaglini, Federico A. Galatolo, Filippo Palumbo",
+            "type": "MS",
+            "date": {
+                "day": 3,
+                "month": 5,
+                "year": 2019 
+            },
+            "link" : "#"
+        },
+        {
+            "title": "Analisi comparativa delle prestazioni di una Rete Neurale con Memoria Stigmergica",
+            "author": "Giuliano Zara",
+            "advisors": "Mario G.C.A. Cimino, Gigliola Vaglini, Federico A. Galatolo",
+            "type": "BS",
+            "date": {
+                "day": 3,
+                "month": 5,
+                "year": 2019 
+            },
+            "link" : "#"
+        },
+        {
+            "title": "Effetti della regolarizzazione di Tikhonov e del dropout sulla rete neurale ricorrente a memoria stigmergica",
+            "author": "Mattia Campagna",
+            "advisors": "Mario G.C.A. Cimino, Gigliola Vaglini, Federico A. Galatolo",
+            "type": "BS",
+            "date": {
+                "day": 3,
+                "month": 5,
+                "year": 2019 
+            },
+            "link" : "#"
+        }
+    ],
+    "projects":[
+        {
+            "title": "Slope",
+            "name": "slope",
+            "description": "Super Light Objective Processor Emulator (aka slope) is a very light and simple virtual machine for an object-oriented processor. The entire project was realized for an university exam, so it is not complete or usable in real life.",
+            "afferences": ["unipi", "school-project"],
+            "date": {
+                "day": 14,
+                "month": 1,
+                "year": 2017
+            },
+            "link": "https://github.com/galatolofederico/slope"
+        },
+        {
+            "title": "Isaac Optimization Framework",
+            "name": "isaac",
+            "description": "Isaac was born with the intent to fill the gap between high level description capabilities of the modern programming languages and the optimizations algorithms. With isaac you can model your optimization problems using all the expressive power of Python",
+            "afferences": ["research", "personal"],
+            "date": {
+                "day": 28,
+                "month": 3,
+                "year": 2018
+            },
+            "link": "https://github.com/galatolofederico/isaac-framework"
+        },
+        {
+            "title": "Sacred Retrieve",
+            "name": "sacred-retrieve",
+            "description": "Python script for easily retrieving and processing results from a sacred mongodb collection",
+            "afferences": ["unipi", "research"],
+            "date": {
+                "day": 28,
+                "month": 10,
+                "year": 2018
+            },
+            "link": "https://github.com/galatolofederico/sacred-retrieve"
+        },
+        {
+            "title": "torchsnn",
+            "name": "torchsnn",
+            "description": "pytorch implementation of the Stigmergic Neural Networks as presented in the paper Using stigmergy to incorporate the time into artificial neural networks.",
+            "afferences": ["unipi", "research"],
+            "date": {
+                "day": 15,
+                "month": 11,
+                "year": 2018
+            },
+            "link": "https://github.com/galatolofederico/torchsnn"
+        },
+        {
+            "title": "Pytorch MNIST Stroke",
+            "name": "pytorch-mnist-stroke",
+            "description": "PyTorch helper Dataset class for downloading and parsing the MNIST digits stroke sequence data dataset.            ",
+            "afferences": ["unipi", "research"],
+            "date": {
+                "day": 1,
+                "month": 12,
+                "year": 2018
+            },
+            "link": "https://github.com/galatolofederico/pytorch-mnist-stroke"
+        },
+        {
+            "title": "dotfiles",
+            "name": "dotfiles",
+            "description": "Dotfiles files for my Arch Linux meta-distribution",
+            "afferences": ["linux", "personal"],
+            "date": {
+                "day": 24,
+                "month": 12,
+                "year": 2018
+            },
+            "link": "https://github.com/galatolofederico/dotfiles"
+        },
+        {
+            "title": "torchsm",
+            "name": "torchsm",
+            "description": "Pytorch implementation of the Stigmergic Memory as presented in the paper Using stigmergy as a computational memory in the design of recurrent neural networks.",
+            "afferences": ["unipi", "research"],
+            "date": {
+                "day": 14,
+                "month": 1,
+                "year": 2019
+            },
+            "link": "https://github.com/galatolofederico/torchsm"
+        },
+        {
+            "title": "torchreinforce",
+            "name": "torchreinforce",
+            "description": "A pythonic implementation of the REINFORCE algorithm that is actually fun to use",
+            "afferences": ["research", "personal"],
+            "date": {
+                "day": 20,
+                "month": 1,
+                "year": 2019
+            },
+            "link": "https://github.com/galatolofederico/torchreinforce"
+        },
+        {
+            "title": "icpram2019",
+            "name": "icpram2019",
+            "description": "Implementation of the experiments proposed in the paper Using stigmergy as a computational memory in the design of recurrent neural networks.",
+            "afferences": ["unipi", "research"],
+            "date": {
+                "day": 17,
+                "month": 1,
+                "year": 2019
+            },
+            "link": "https://github.com/galatolofederico/icpram2019"
+        },
+        {
+            "title": "mike2018",
+            "name": "mike2018",
+            "description": "Implementation of the experiments proposed in the paper Using stigmergy to incorporate the time into artificial neural networks.",
+            "afferences": ["unipi", "research"],
+            "date": {
+                "day": 26,
+                "month": 10,
+                "year": 2018
+            },
+            "link": "https://github.com/galatolofederico/mike2018"
+        },
+        {
+            "title": "galatolo.me",
+            "name": "galatolo.me",
+            "description": "Personal website realized with Angular 7 and Boostrap 4",
+            "afferences": ["personal"],
+            "date": {
+                "day": 1,
+                "month": 2,
+                "year": 2019
+            },
+            "link": "https://github.com/galatolofederico/galatolo.me"
+        },
+        {
+            "title": "yadepage",
+            "name": "yadepage",
+            "description": "A reasonably secure offline deterministic password generator",
+            "afferences": ["personal"],
+            "date": {
+                "day": 9,
+                "month": 2,
+                "year": 2019
+            },
+            "link": "https://github.com/galatolofederico/yadepage"
+        }
+    ],
+    "lectures":[
+        {
+            "title": "Ionic 3 Framework",
+            "name" : "ionic2017",
+            "position": "Univeristy of Pisa - Pisa (Italy)",
+            "container": "Programmazione",
+            "date":{
+                "day": 1,
+                "month": 11,
+                "year": 2017
+            },
+            "resources": [
+                {
+                    "name": "Slides",
+                    "link": "https://docs.google.com/presentation/d/15udEI1-UpJO8NN0Dp0Q6hUtO9whBzQFzakTiPh3WK4I/edit#slide=id.p"
+                }
+            ]
+        },
+        {
+            "title": "Versioning with GIT",
+            "name" : "git2018",
+            "position": "Univeristy of Pisa - Pisa (Italy)",
+            "container": "Programmazione Avanzata",
+            "date":{
+                "day": 1,
+                "month": 11,
+                "year": 2018
+            },
+            "resources": [
+                {
+                    "name": "Slides PPTX",
+                    "link": "https://drive.google.com/open?id=1gG3p_lKpkcYDuKdkQPem4gnldAgZalmF"
+                },
+                {
+                    "name": "Slides PDF",
+                    "link": "https://drive.google.com/open?id=1DFhDEY1Blnimg4WFudNcJwSjBPtHnGwo"
+                }
+            ]
+        },
+        {
+            "title": "Progressive Web Apps with Polymer",
+            "name" : "polymer2018",
+            "position": "Univeristy of Pisa - Pisa (Italy)",
+            "container": "Programmazione Avanzata",
+            "date":{
+                "day": 1,
+                "month": 11,
+                "year": 2018
+            },
+            "resources": [
+                {
+                    "name": "Slides PPTX",
+                    "link": "https://drive.google.com/open?id=1G4ov_FALVkFQw2sdGQ87hkHi3eWUgD_r"
+                },
+                {
+                    "name": "Slides PDF",
+                    "link": "https://drive.google.com/open?id=16wXQD8YcVsxT6hpMMOAdfvyn6njI8yeN"
+                },
+                {
+                    "name": "Code",
+                    "link": "https://github.com/galatolofederico/workshop-2018/tree/master/webapp"
+                }
+            ]
+        },
+        {
+            "title": "Webservices with Express and NodeJS",
+            "name" : "backend2018",
+            "position": "Univeristy of Pisa - Pisa (Italy)",
+            "container": "Programmazione Avanzata",
+            "date":{
+                "day": 1,
+                "month": 11,
+                "year": 2018
+            },
+            "resources": [
+                {
+                    "name": "Slides PPTX",
+                    "link": "https://drive.google.com/open?id=1waE8yYv0IZrU5xx5ev3W4ybQTQJVkwPO"
+                },
+                {
+                    "name": "Slides PDF",
+                    "link": "https://drive.google.com/open?id=1_iS3Eeu6PrOQy13PtbhDH9yC6CK2SU6V"
+                },
+                {
+                    "name": "Code",
+                    "link": "https://github.com/galatolofederico/workshop-2018/tree/master/webapp"
+                }
+            ]
+        },
+        {
+            "title": "Using stigmergy to incorporate the time into artificial neural networks",
+            "name" : "mike2018",
+            "position": "Technical University of Cluj-Napoca - Cluj-Napoca (Romania)",
+            "container": "MIKE 2018",
+            "date":{
+                "day": 20,
+                "month": 12,
+                "year": 2018
+            },
+            "resources": [
+                {
+                    "name": "Slides PPTX",
+                    "link": "https://drive.google.com/open?id=18pQfJji6-mAONBOCm6L5f2XCF2IYY_uJ"
+                },
+                {
+                    "name": "Slides PDF",
+                    "link": "https://drive.google.com/open?id=1wq4hGgmGOMqwfyKpbb-V1NgvchYSyclC"
+                },
+                {
+                    "name": "Code",
+                    "link": "https://github.com/galatolofederico/mike2018"
+                }
+            ]
+        },
+        {
+            "title": "Using stigmergy as a computational memory in the design of recurrent neural networks ",
+            "name" : "icpram2019",
+            "position": "Vienna House Diplomat Prague - Prague (Czech Republic)",
+            "container": "ICPRAM 2019",
+            "date":{
+                "day": 20,
+                "month": 2,
+                "year": 2019
+            },
+            "resources": [
+                {
+                    "name": "Slides Source Code",
+                    "link": "https://github.com/galatolofederico/icpram2019-presentation"
+                },
+                {
+                    "name": "Slides PDF",
+                    "link": "https://github.com/galatolofederico/icpram2019-presentation/blob/master/presentation.pdf"
+                },
+                {
+                    "name": "Architecture Code",
+                    "link": "https://github.com/galatolofederico/icpram2019"
+                }
+            ]
+        }
+    ]
+}

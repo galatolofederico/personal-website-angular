@@ -6,10 +6,12 @@ import {PublicationComponent} from "./publication/publication.component"
 import {ProjectsComponent} from './projects/projects.component'
 import {LecturesComponent} from './lectures/lectures.component'
 import {LectureComponent} from './lecture/lecture.component'
+import { AdvisedThesesComponent } from './advised-theses/advised-theses.component';
 
 const routes: Routes = [
   {path:"", component: HomepageComponent},
   {path:"publications", component: PublicationsComponent},
+  {path:"theses", component: AdvisedThesesComponent},
   {path: "publication/:name", component: PublicationComponent},
   {path: "projects", component: ProjectsComponent},
   {path: "lectures", component: LecturesComponent},

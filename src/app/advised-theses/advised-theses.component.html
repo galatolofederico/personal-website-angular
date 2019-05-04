@@ -1,0 +1,12 @@
+<div class="container">
+  <div class="row justify-content-center ">
+    <h2 class="col-6 text-center top-margin-10">Advised Theses</h2>
+  </div>
+  <div class="row justify-content-center">
+    <ng-container *ngFor="let thesis of theses | async">
+        <app-item class="col-10 mt-3 mb-3" cardclass="bg-light-dark" 
+        title="{{thesis.title}}&nbsp;({{thesis.type}})" subtitle="{{thesis.author}} ({{thesis.date.year}})" 
+        link="{{thesis.link}}" link-title="PDF"></app-item>
+    </ng-container>
+  </div>
+</div>

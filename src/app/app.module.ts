@@ -20,6 +20,7 @@ import { LectureComponent } from './lecture/lecture.component'
 
 import { Angulartics2Module } from 'angulartics2';
 import { Angulartics2GoogleAnalytics } from 'angulartics2/ga';
+import { AdvisedThesesComponent } from './advised-theses/advised-theses.component';
 
 @NgModule({
   declarations: [
@@ -35,6 +36,7 @@ import { Angulartics2GoogleAnalytics } from 'angulartics2/ga';
     ProjectsComponent,
     LecturesComponent,
     LectureComponent,
+    AdvisedThesesComponent,
   ],
   imports: [
     BrowserModule,

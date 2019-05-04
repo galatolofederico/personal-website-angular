@@ -14,6 +14,7 @@ export class DataService {
 
   qualifications : BehaviorSubject<Array<string>> = new BehaviorSubject<Array<string>>([]);
   publications: BehaviorSubject<Array<Publication>> = new BehaviorSubject<Array<Publication>>([]);
+  advised_theses: BehaviorSubject<Array<AdvisedThesis>> = new BehaviorSubject<Array<AdvisedThesis>>([]);
   projects : BehaviorSubject<Array<Project>> = new BehaviorSubject<Array<Project>>([]);
   lectures : BehaviorSubject<Array<Lecture>> = new BehaviorSubject<Array<Lecture>>([]);
   profiles : BehaviorSubject<Array<Profile>> = new BehaviorSubject<Array<Profile>>([]);
@@ -24,6 +25,7 @@ export class DataService {
     let _projects = [];
     let _lectures = [];
     let _profiles = []
+    let _advised_theses = [];
 
     this.http.get(this.mejson).subscribe((data: MeJson) => {
       this.name.next(this._parseName(data.anagraphic.fullname))
@@ -53,6 +55,11 @@ export class DataService {
         _publications.push(publication)
       }
       this.publications.next(_publications.sort(this._sortDate))
+
+      for(let advised_thesis of data.advised_theses){
+        _advised_theses.push(advised_thesis)
+      }
+      this.advised_theses.next(_advised_theses.sort(this._sortDate))
 
       for (let qualification of data.anagraphic.qualifications){
         _qualifications.push(qualification)
@@ -109,6 +116,10 @@ export class DataService {
 
   getPublications(){
     return this.publications
+  }
+
+  getAdvisedTheses(){
+    return this.advised_theses
   }
 
   getProjects(){
