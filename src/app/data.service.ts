@@ -6,7 +6,7 @@ import { Subject, BehaviorSubject } from 'rxjs';
   providedIn: 'root'
 })
 export class DataService {
-  mejson: string = "https://galatolo.me/me.json";
+  mejson: string = "https://static.galatolo.me/me.json";
 
   name : BehaviorSubject<string> = new BehaviorSubject<string>("");
   picture: BehaviorSubject<string> = new BehaviorSubject<string>("");
