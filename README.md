@@ -10,6 +10,8 @@ Clone this repository
 git clone https://github.com/galatolofederico/galatolo.me.git && cd galatolo.me
 ```
 
+### Without docker
+
 Install the dependencies 
 
 ```
@@ -23,11 +25,28 @@ npm install -g @angular/cli
 ```
 
 Serve it!
+
 ```
 ng serve
 ```
 
 The website should be live at http://localhost:4200/
+
+### With docker
+
+Build the container
+
+```
+docker build . -t personal-webiste
+```
+
+Run it
+
+```
+docker run -p "8080:80" personal-website
+```
+
+The website should be live at http://localhost:8080/
 
 ## Make it yours
 
