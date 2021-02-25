@@ -10,6 +10,6 @@ WORKDIR /personal-website
 RUN npm i -g npm
 RUN npm install
 RUN NG_CLI_ANALYTICS=ci npm install -g @angular/cli
-RUN ng build
 
-RUN cp -r dist/personal-site/* /usr/share/nginx/html
+RUN ng build --prod --build-optimizer
+RUN ./static-compression.sh
